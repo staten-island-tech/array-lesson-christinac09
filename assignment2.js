@@ -1,3 +1,4 @@
+// ASSIGNMENT 2
 const products = [
   { name: "Laptop", price: 1200, category: "Electronics", rating: 4.5 },
   { name: "Phone", price: 800, category: "Electronics", rating: 4.7 },
@@ -10,7 +11,12 @@ const products = [
 
 // Part 1
 products.forEach((product) => console.log(product.name, product.price));
-products.forEach((product) => console.log(product.name, product.price * 1.1));
+//products.forEach((product) => console.log(product.name, product.price * 1.1));
+products.forEach{
+  (product) => (product.price = Math.round(product.price * 1.1));
+  (product) => console.log(product.name, product.price);
+};
+//products.forEach((product) => console.log(product.name, product.price));
 
 const categories = [];
 products.forEach((product) => {
