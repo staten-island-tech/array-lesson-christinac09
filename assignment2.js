@@ -12,10 +12,10 @@ const products = [
 // Part 1
 products.forEach((product) => console.log(product.name, product.price));
 //products.forEach((product) => console.log(product.name, product.price * 1.1));
-products.forEach{
-  (product) => (product.price = Math.round(product.price * 1.1));
-  (product) => console.log(product.name, product.price);
-};
+products.forEach((product) => {
+  product.price = Math.round(product.price * 1.1);
+  console.log(product.name, product.price);
+});
 //products.forEach((product) => console.log(product.name, product.price));
 
 const categories = [];
